@@ -8,11 +8,11 @@
 		<version>3.1.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.projetofaculdade</groupId>
-	<artifactId>lojavirtual</artifactId>
+	<groupId>com.faculdade</groupId>
+	<artifactId>lojaonline</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>lojavirtual</name>
-	<description>Loja de roupa online</description>
+	<name>lojaonline</name>
+	<description>Esse projeto consiste em uma API para uma loja virtual</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -31,10 +31,9 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
-			<optional>true</optional>
 		</dependency>
 		<dependency>
 			<groupId>org.postgresql</groupId>
@@ -55,12 +54,6 @@
 
 	<build>
 		<plugins>
-	
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-resources-plugin</artifactId>
-				<version>3.1.0</version> <!--$NO-MVN-MAN-VER$ -->
-			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
